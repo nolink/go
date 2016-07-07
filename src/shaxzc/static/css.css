@@ -2212,52 +2212,6 @@ ol li .list-cont-txt .list-check:hover{
 	text-align:left;
 }
 /* home */
-.headTop{
-	height:80px;
-	width:100%;
-	background:#FFF;
-}
-.logo a{
-	height:80px;
-	width:215px;
-	background:url(/static/logo.png) no-repeat 40px center;
-	display:block;
-}
-.headTop .text{
-	font-size:14px;
-	color:#6d6e6e;
-	line-height:80px;
-	margin-left:18px;
-	display:block;
-	float:left;
-}
-.headTop .headR .headImg{
-	float:right;
-	height:39px;
-	position:absolute;
-	right:97px;
-	top:20px;
-}
-.headTop .headR .subnav{
-	overflow:hidden;
-	position:absolute;
-	top:0;
-	right:331px;
-	height:80px;
-}
-.headTop .headR .subnav ul li{
-	float:left;
-	line-height:80px;
-	margin:0 20px;
-}
-.headTop .headR .subnav ul li a{
-	color:#2f2f2f;
-	font-size:16px;
-}
-.headTop .headR .subnav ul .overBtn{
-	border-bottom:3px solid #21cfbb;
-	height:77px;
-}
 /* 青客是谁 */
 .who{
 	width:100%;

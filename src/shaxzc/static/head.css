@@ -4,6 +4,7 @@
 	height:80px;
 	width:100%;
 	background:#FFF;
+	position:relative;
 }
 
 .headTop .text{
@@ -15,18 +16,11 @@
 	float:left;
 }
 
-.headTop .headR .headImg{
-	float:right;
-	height:39px;
-	position:absolute;
-	right:97px;
-	top:20px;
-}
 .headTop .headR .subnav{
 	overflow:hidden;
 	position:absolute;
 	top:0;
-	right:331px;
+	right:10px;
 	height:80px;
 }
 .headTop .headR .subnav ul li{

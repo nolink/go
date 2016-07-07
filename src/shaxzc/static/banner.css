@@ -1,0 +1,38 @@
+
+.ownerBanner{
+	height:500px;
+	width:100%;
+}
+
+
+.zfb_datu_ul{
+	height:500px;
+	position:relative;
+}
+.zfb_datu_ul li{
+	height:500px;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:10;
+	width:100%;
+}
+.datu_li1{
+	background:url(/static/banner01.jpg) no-repeat;
+	background-size:cover;
+	background-position:50% 50%;
+}
+.datu_li2{
+	background:url(/static/banner02.jpg) no-repeat;
+	background-position:50% 50%;background-size:cover;
+}
+.datu_li3{
+	background:url(/static/banner03.jpg) no-repeat;
+	background-position:50% 50%;
+	background-size:cover;
+}
+.datu_li4{
+	background:url(/static/banner04.jpg) no-repeat;
+	background-position:50% 50%;
+	background-size:cover;
+}

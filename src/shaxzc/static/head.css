@@ -1,0 +1,369 @@
+/* 网页头部 */
+
+.headTop{
+	height:80px;
+	width:100%;
+	background:#FFF;
+}
+
+.headTop .text{
+	font-size:14px;
+	color:#6d6e6e;
+	line-height:80px;
+	margin-left:18px;
+	display:block;
+	float:left;
+}
+
+.headTop .headR .headImg{
+	float:right;
+	height:39px;
+	position:absolute;
+	right:97px;
+	top:20px;
+}
+.headTop .headR .subnav{
+	overflow:hidden;
+	position:absolute;
+	top:0;
+	right:331px;
+	height:80px;
+}
+.headTop .headR .subnav ul li{
+	float:left;
+	line-height:80px;
+	margin:0 20px;
+}
+.headTop .headR .subnav ul li a{
+	color:#2f2f2f;
+	font-size:16px;
+}
+.headTop .headR .subnav ul .overBtn{
+	border-bottom:3px solid #21cfbb;
+	height:77px;
+}
+
+.logo a{
+	height:80px;
+	width:215px;
+	background:url(/static/logo2.png) no-repeat 40px center;
+	display:block;
+}
+
+
+.currentNav{
+	color:#21cfbb;
+}
+.headNav{
+	height:80px;
+	width:100%;
+	min-width:1366px;
+	background:#FFF;
+	border-bottom:1px solid #959595\0;
+	box-shadow:0 1px 3px #959595;
+	box-shadow:0 1px 3px #959595\0;
+}
+.headNav .headLeft{
+	color:#21cfbb;
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.headNav .headLeft .logo{
+	float:left;
+	margin:15px 28px 15px 40px;
+	border-right:1px solid #e9e9e9;
+	padding-right:28px;
+}
+.headNav .headLeft .popup{
+	float:left;
+	background:url(../images/top-sel.jpg) no-repeat center;
+	height:33px;
+	width:116px;
+	line-height:30px;
+	text-align:center;
+	margin-top:25px;
+	cursor:pointer;
+}
+.popupHide{
+	width:85px;
+	position:absolute;
+	top:57px;
+	left:252px;
+	background:rgba(255,255,255,0.8);
+	border:1px solid #00ab84;
+	border-top:none;
+	display:none;
+	z-index:1000;
+}
+.headNav .headLeft .popupHide p{
+	text-align:center;
+	line-height:24px;
+	color:#00ab84;
+}
+.headNav .headLeft .popupHide p:hover{
+	background:#d2e7fd;
+}
+.headNav .headLeft .top-join{
+	float:left;
+	background:url(../images/top-join.jpg) no-repeat center;
+	width:140px;
+	height:33px;
+	margin:25px;
+}
+.headNav .headLeft .top-join a{
+	color:#00ab84;
+	font-size:14px;
+	line-height:33px;
+	padding-left:60px;
+	width:140px;
+	height:33px;
+	display:block;
+}
+.headNav .headRight{
+	display:block;
+	overflow:hidden;
+}
+.headNav .headRight .subnav{
+	border-right:1px solid #f0f0f0;
+	float:right;
+}
+.headNav .headRight .subnav a{
+	line-height:80px;
+	margin-right:50px;
+	color:#5b5b5b;
+	font-size:16px;
+}
+.headNav .headRight .subnav a:hover{
+	color:#21cfbb;
+}
+.headNav .headRight .phone{
+	float:right;
+	padding:23px 22px;
+	margin-right:80px;
+}
+.headNav .headRight .phone .ph1{
+	font-size:12px;
+}
+.headNav .headRight .phone .ph2{
+	color:#21cfbb;
+	font-size:22px;
+	font-weight:bold;
+	margin-top:5px;
+}
+.headMenu{
+	position:absolute;
+	top:0;
+	right:0;
+}
+.headMenu .menu{
+	width:80px;
+	height:80px;
+	cursor:pointer;
+	background:#20cebb url(../images/menu1.png) no-repeat center;
+	transition:background-color 0.5s ease 0s;
+}
+.headMenu .menu:hover{
+	background:#029f8e url(../images/menu2.png) no-repeat center;
+}
+.headMenu .menuHide{
+	width:80px;
+	height:80px;
+	cursor:pointer;
+	background:#20cebb url(../images/icon_06.png) no-repeat center;
+	display:none;
+}
+.headMenu .nav{
+	width:165px;
+	height:500px;
+	position:absolute;
+	top:80px;
+	right:0;
+	background:#20cebb;
+	z-index:10000;
+	display:none;
+}
+.headMenu .nav a{
+	display:block;
+	color:#FFF;
+	line-height:50px;
+	height:50px;
+	font-size:16px;
+	text-align:center;
+}
+.headMenu .nav a:hover{
+	color:#20cebb;
+	background:#FFF;
+}
+.headMenu .nav a span{
+	border-bottom:1px solid #58dacc;
+	width:110px;
+	display:block;
+	margin:0 auto;
+}
+
+
+/* leftSide 左边悬浮 */
+#sidebarRig{
+	position:fixed;
+	bottom:100px;
+	right:0;
+	z-index:99;
+}
+#sidebarRig ul li{
+	height:60px;
+}
+#sidebarRig ul #sidebarTop{
+	cursor:pointer;
+}
+#sidebarRig ul li img{
+	float:right;
+}
+#sidebarRig ul li .sidebarBox{
+	height:45px;
+	float:right;
+	display:block;
+	min-width:53px;
+	max-width:174px;
+}
+#sidebarRig ul li .sidebarBox .sideFadeOut{
+	display:block;
+}
+#sidebarRig ul li .sidebarBox .sideFadeIn{
+	margin-right:-124px;
+}
+#sidebarRig ul li .sidebarBox.youhui .sideFadeIn{
+	display:none;
+	position:absolute;
+	right:54px;
+}
+#SideBox01,#SideBox02,#SideBox03,#SideBox04{
+	width:124px;
+	position:relative;
+	z-index:99;
+	margin-left:53px;
+}
+#SideBox01 .tit,#SideBox03 .tit,#SideBox04 .tit{
+	height:44px;
+	overflow:hidden;
+	border-bottom:1px solid #FFF;
+	margin-bottom:15px;
+}
+#SideBox01 .tit h3,#SideBox02 .tit h3,#SideBox03 .tit h3,#SideBox04 .tit h3{
+	font-size:14px;
+	color:#FFF;
+	line-height:44px;
+	float:left;
+}
+#SideBox01 .tit span,#SideBox02 .tit span{
+	height:17px;
+	width:17px;
+	line-height:44px;
+	display:block;
+	float:left;
+	margin:14px 15px 13px 22px;
+}
+#SideBox01{
+	background:url(../images/Side/weima.png) no-repeat;
+	height:332px;
+}
+#SideBox01 .scan{
+	width:100%;
+}
+#SideBox01 .scan0{
+	margin-top:6px;
+}
+#SideBox01 .scan p{
+	width:88px;
+	display:inline-block;
+	text-align:center;
+	color:#FFF;
+	margin:0 15px 5px 21px;
+	padding:0;
+	line-height:12px;
+}
+#SideBox02{
+	height:45px;
+	background:url(../images/Side/twoShow.png) no-repeat;
+}
+#SideBox02 .tit{
+	height:44px;
+	overflow:hidden;
+	margin-bottom:15px;
+}
+#SideBox03{
+	height:170px;
+	background:url(../images/Side/threeShow.png) no-repeat;
+}
+#SideBox03 .tit span{
+	height:21px;
+	width:21px;
+	line-height:44px;
+	display:block;
+	float:left;
+	margin:12px 13px 11px 20px;
+}
+#SideBox03 .contact a{
+	width:42px;
+	display:block;
+	float:left;
+	margin-left:14px;
+	font-size:10px;
+	text-align:center;
+	color:#FFF;
+}
+#SideBox03 .contact a p{
+	margin-top:15px;
+	display:inline-block;
+	color:#FFF;
+}
+#SideBox04{
+	height:154px;
+	background:url(../images/Side/fourShow.png) no-repeat;
+}
+#SideBox04 .tit span{
+	height:19px;
+	width:21px;
+	line-height:44px;
+	display:block;
+	float:left;
+	margin:12px 13px 14px 21px;
+}
+#SideBox04 .text{
+	width:95px;
+	height:35px;
+	margin:0 0 22px 9px;
+}
+#SideBox04 .text textarea{
+	resize:none;
+	width:95px;
+	height:35px;
+	font-size:12px;
+	color:#898989;
+	border:none;
+	padding:5px;
+}
+#SideBox04 .submit{
+	margin:0 auto;
+	width:58px;
+	height:26px;
+}
+#SideBox04 .submit form input{
+	width:56px;
+	height:26px;
+	background:none;
+	border:1px solid #FFF;
+	_border:1px solid #FFF;
+	font-size:15px;
+	color:#FFF;
+	line-height:26px;
+	text-align:center;
+	display:block;
+}
+#SideBox04 .tit{
+	height:44px;
+	overflow:hidden;
+	border-bottom:1px solid #FFF;
+	margin-bottom:12px;
+}

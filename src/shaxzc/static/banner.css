@@ -1,4 +1,40 @@
 
+.imgLeft img{
+	
+	width: 45%;
+	height: auto;
+}
+
+.imgRight img{
+	
+	width: 45%;
+	height: auto;
+}
+
+.aboutAxzc{
+	width: 96%;
+	MARGIN-RIGHT: auto;MARGIN-LEFT: auto;
+}
+
+.aboutAxzc img{
+	height: auto;
+    width: 100%;
+}
+
+.aboutAxzc h2{
+	font-size: 1.5em;
+	color: #ee7500;
+    margin-top: 1em;
+    margin-bottom: 1em;
+	font-family: Segoe UI,"Microsoft YaHei","Hiragino Sans GB","华文细黑","STHeiti",SimHei,"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+
+.aboutAxzc p{
+	line-height: 1.8em;
+    margin-bottom: 2em;
+	font-size: 14px;
+}
+
 .ownerBanner{
 	height:500px;
 	width:100%;

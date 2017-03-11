@@ -2,7 +2,6 @@
 
 package classpath
 
-import "os"
 import "path/filepath"
 import "io/ioutil"
 

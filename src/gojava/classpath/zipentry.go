@@ -1,7 +1,6 @@
 
 package classpath
 
-import "os"
 import "io/ioutil"
 import "path/filepath"
 import "errors"
@@ -24,7 +23,7 @@ func (self *ZipEntry) String() string{
 }
 
 func (self *ZipEntry) ReadClass(className string) ([]byte, Entry, error) {
-	zipReader, err = zip.OpenReader(self.AbsPath)
+	zipReader, err := zip.OpenReader(self.AbsPath)
 	if err != nil {
 		return nil, nil, err
 	}

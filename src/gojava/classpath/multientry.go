@@ -8,10 +8,10 @@ import (
 
 type MultiEntry []Entry
 
-func NewMultiEntry(pathList string) MultiEntry{
+func newMultiEntry(pathList string) MultiEntry{
 	multiEntry := []Entry{}
 	for _, path := range strings.Split(pathList, pathListSeparator){
-		entry := NewEntry(path)
+		entry := newEntry(path)
 		multiEntry = append(multiEntry, entry)
 	}
 	return multiEntry

@@ -7,10 +7,10 @@ import "errors"
 import "archive/zip"
 
 type ZipEntry struct{
-	AbsPath string
+	absPath string
 }
 
-func NewZipEntry(path string) *ZipEntry {
+func newZipEntry(path string) *ZipEntry {
 	absPath, err := filepath.Abs(path)
 	if err != nil {
 		panic(err)
@@ -19,11 +19,11 @@ func NewZipEntry(path string) *ZipEntry {
 }
 
 func (self *ZipEntry) String() string{
-	return self.AbsPath
+	return self.absPath
 }
 
 func (self *ZipEntry) ReadClass(className string) ([]byte, Entry, error) {
-	zipReader, err := zip.OpenReader(self.AbsPath)
+	zipReader, err := zip.OpenReader(self.absPath)
 	if err != nil {
 		return nil, nil, err
 	}

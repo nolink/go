@@ -13,16 +13,16 @@ type Entry interface {
 	String() string
 }
 
-func NewEntry(path string) Entry {
+func newEntry(path string) Entry {
 	if strings.Contains(path, pathListSeparator){
-		return NewMultiEntry(path)
+		return newMultiEntry(path)
 	}
 	if strings.HasSuffix(path, "*"){
-		return NewWildEntry(path)
+		return newWildEntry(path)
 	}
 	if strings.HasSuffix(path, ".jar") || strings.HasSuffix(path, ".JAR") || 
 		strings.HasSuffix(path, ".zip") || strings.HasSuffix(path, ".ZIP") {
-			return NewZipEntry(path)
+			return newZipEntry(path)
 	}
-	return NewDirEntry(path)
+	return newDirEntry(path)
 }

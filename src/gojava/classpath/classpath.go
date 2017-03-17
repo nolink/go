@@ -15,27 +15,27 @@ type Classpath struct{
 
 func Parse(jreOption string, cpOption string) *Classpath{
 	cp := &Classpath{}
-	cp.ParseBootAndExtClasspath(jreOption)
-	cp.ParseUserClasspath(cpOption)
+	cp.parseBootAndExtClasspath(jreOption)
+	cp.parseUserClasspath(cpOption)
 	return cp
 }
 
-func (self *Classpath) ParseBootAndExtClasspath(jreOption string) {
-	jreDir := GetJreDir(jreOption)
+func (self *Classpath) parseBootAndExtClasspath(jreOption string) {
+	jreDir := getJreDir(jreOption)
 	jreLibPath := filepath.Join(jreDir, "lib", "*")
-	self.bootClasspath = NewWildEntry(jreLibPath)
+	self.bootClasspath = newWildEntry(jreLibPath)
 	jreExtPath := filepath.Join(jreDir, "lib", "ext", "*")
-	self.extClasspath = NewWildEntry(jreExtPath)
+	self.extClasspath = newWildEntry(jreExtPath)
 }
 
-func (self *Classpath) ParseUserClasspath(cpOption string) {
+func (self *Classpath) parseUserClasspath(cpOption string) {
 	if cpOption == "" {
 		cpOption = "."
 	}
-	self.userClasspath = NewEntry(cpOption)
+	self.userClasspath = newEntry(cpOption)
 }
 
-func GetJreDir(jreOption string) string {
+func getJreDir(jreOption string) string {
 	if jreOption != "" && exists(jreOption) {
 		return jreOption
 	}

@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-func NewWildEntry(path string) MultiEntry {
+func newWildEntry(path string) MultiEntry {
 	baseDir := path[:len(path) - 1]
 	multiEntry := []Entry{}
 	walkFn := func(path string, info os.FileInfo, err error) error {
@@ -18,7 +18,7 @@ func NewWildEntry(path string) MultiEntry {
 			return filepath.SkipDir
 		}
 		if strings.HasSuffix(path, ".jar") || strings.HasSuffix(path, ".JAR") {
-			jarEntry := NewZipEntry(path)
+			jarEntry := newZipEntry(path)
 			multiEntry = append(multiEntry, jarEntry)
 		}
 		return nil

@@ -1,5 +1,9 @@
 package classfile
 
+import (
+	"fmt"
+)
+
 type MemberInfo struct {
 	cp          ConstantPool
 	accessFlags uint16
@@ -22,6 +26,7 @@ func (self *MemberInfo) Descriptor() string {
 
 func readMembers(reader *ClassReader, cp ConstantPool) []*MemberInfo {
 	memCnt := reader.readUint16()
+	fmt.Printf("memCnt: %v\n", memCnt)
 	members := make([]*MemberInfo, memCnt)
 	for i := range members {
 		members[i] = readMember(reader, cp)
@@ -37,4 +42,14 @@ func readMember(reader *ClassReader, cp ConstantPool) *MemberInfo {
 		descIndex:   reader.readUint16(),
 		attributes:  readAttributes(reader, cp),
 	}
+}
+
+func (self *MemberInfo) CodeAttribute() *CodeAttribute {
+	for _, attrInfo := range self.attributes {
+		switch attrInfo.(type) {
+		case *CodeAttribute:
+			return attrInfo.(*CodeAttribute)
+		}
+	}
+	return nil
 }
